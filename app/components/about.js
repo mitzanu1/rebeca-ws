@@ -20,7 +20,7 @@ export default function About() {
             </div>
             <div className={styles.det}>
               <h4>{t("birthday-t")}</h4>
-              <p>{t("birthday")}</p>
+              <p>11 April 1999</p>
             </div>
             <div className={styles.det}>
               <h4>{t("birthplace-t")}</h4>

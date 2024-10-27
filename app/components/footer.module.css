@@ -4,4 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
+
+
+.icons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    grid-gap: 3rem
+}
+

@@ -14,9 +14,11 @@ export default function Experience() {
       <article className={styles.grid}>
         <h6 className={styles.left}></h6> <h6></h6>
         <div className={`${styles.wplace} ${styles.left}`}>
-          <h3>{t(`company1-ex`)}</h3>
-          <h4>{t(`position1-ex`)}</h4>
-          <p>{t(`desc1-ex`)}</p>
+          <h3>WSP Global Inc</h3>
+          <h4>CEO</h4>
+          <p>
+            Im charge of spending the company income on relaxing activities.
+          </p>
         </div>
         <div className={`${styles.date} ${styles.right}`}>
           <p>
