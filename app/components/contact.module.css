@@ -1,0 +1,163 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.title {
+  position: relative;
+  color: var(--title);
+  font-size: var(--tsize);
+  padding: 4rem 5rem 2rem;
+  border-bottom: 2px solid gray;
+  justify-self: center;
+}
+
+.arrow {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(167, 167, 167);
+  left: 180px;
+  top: 140px;
+  z-index: 99;
+  border-radius: 50%;
+  background-image: url("/arrow.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5% 7%;
+  margin: 1rem;
+  background-color: white;
+  grid-gap: 1.5rem;
+  max-width: 600px;
+}
+
+
+
+.main p {
+  height: 3rem;
+  background-color: var(--primary);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.main span {
+  text-decoration: underline;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.main input {
+  height: 3rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 1px solid rgb(206, 206, 206);
+  min-width: 100px;
+  border-radius: var(--border-radius);
+}
+
+.main input:focus {
+  border-color: rgb(146, 146, 146);
+  outline: none;
+}
+
+.detailsBox {
+  display: flex;
+  grid-gap: 1.5rem;
+}
+
+.main textarea {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 1px solid rgb(206, 206, 206);
+  resize: none;
+}
+
+.main textarea:focus {
+  border-color: rgb(146, 146, 146);
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  background-color: var(--primary);
+  border: none;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.btn:disabled {
+  background-color: gray;
+}
+
+.close {
+  min-width: 100%;
+  text-align: right;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 1%;
+  height: 1rem;
+}
+
+.popup {
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.popup p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width:500px){
+  .main {
+    max-width: calc(100vw - 10%);
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  
+  .detailsBox {
+    flex-direction: column;
+  }
+
+  .main input {
+    height: 1rem;
+  }
+  .main textarea {
+    height: 5rem;
+  }
+
+}
+@media screen and (max-width: 800px) {
+  .title{
+    padding: 2rem 1rem 1rem;
+    margin: 0 0 2rem;
+    font-size: var(--mob-tsize);
+  }
+  .arrow {
+    top:71px;
+    left:calc(50% - 0.6rem);
+    width: 20px;
+    height: 20px; 
+  }
+}

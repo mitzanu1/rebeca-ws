@@ -1,0 +1,12 @@
+.lang {
+  display: flex;
+}
+
+.lang div {
+  margin-right: 0.5rem;
+}
+
+.lang select {
+  border: none;
+  border-radius: 5px;
+}

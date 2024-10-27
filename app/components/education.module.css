@@ -1,0 +1,93 @@
+.grid {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 0.5rem;
+}
+
+.card {
+  display: flex;
+  min-height: 150px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--primary);
+  max-width: 30%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc h4 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.det {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: rgb(222, 229, 235);
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.title {
+  position: relative;
+  color: var(--title);
+  font-size: var(--tsize);
+  padding: 4rem 5rem 2rem;
+  border-bottom: 2px solid gray;
+  justify-self: center;
+}
+
+.arrow {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(167, 167, 167);
+  left: calc(50% - 0.8rem);
+  top: 132px;
+  z-index: 99;
+  border-radius: 50%;
+  background-image: url("/arrow.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+
+@media screen and (max-width:800px) {
+  .grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    padding: 0 0.3rem;
+  }
+  .title{
+    padding: 2rem 1rem 1rem;
+    margin: 0 0 2rem;
+    font-size: var(--mob-tsize);
+  }
+  .arrow {
+    top:71px;
+    left:calc(50% - 0.6rem);
+    width: 20px;
+    height: 20px; 
+  }
+  .det {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .desc {
+    font-size: 0.7rem;
+  }
+}

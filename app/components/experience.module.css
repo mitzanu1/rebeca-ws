@@ -1,0 +1,171 @@
+.grid {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.wplace {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.wplace p {
+  color:var(--text);
+  padding-top: 1rem;
+}
+
+.wplace h4 {
+  color: rgb(219, 67, 67);
+}
+
+.wplace h3 {
+  color: var(--text);
+}
+
+.date {
+  position: relative;
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.date p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 50px;
+  height: 2rem;
+  width: 200px;
+}
+
+.left {
+  text-align: right;
+  border-right: 2px solid grey;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  height: 100%;
+}
+
+.title {
+  position: relative;
+  color: var(--title);
+  font-size: var(--tsize);
+  padding: 4rem 5rem 2rem;
+  border-bottom: 2px solid gray;
+  justify-self: center;
+}
+
+.arrow {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(167, 167, 167);
+  left: calc(50% - 0.8rem);
+  top: 132px;
+  z-index: 99;
+  border-radius: 50%;
+  background-image: url("/arrow.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.arrowLeft {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(167, 167, 167);
+  left: -43px;
+  top: 7px;
+  z-index: 99;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.arrowRight {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(167, 167, 167);
+  left: 223px;
+  top: 50;
+  z-index: 99;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrowOk {
+  background-image: url("/ok.svg");
+  background-size: 60%;
+}
+
+.arrowX {
+  background-image: url("/x.svg");
+  background-size: 70%;
+}
+
+.grid h6 {
+  height: 2rem;
+}
+
+@media screen and (max-width:800px) {
+  .main {
+    font-size: 0.8rem;
+  }
+  .grid {
+    padding:0
+  }
+  .title {
+    font-size: var(--mob-tsize);
+    padding: 0;
+    margin: 3rem 0 ;
+    padding: 0 1rem 1rem;
+  }
+  .date{
+    width: 45vw;
+    margin: 0;
+  }
+  .wplace {
+    width: 45vw;
+    padding: 0;
+    margin: 0;
+  }
+  .left {
+    padding-right: 1rem;
+    margin: 0;
+  }
+  .right {
+    padding-left: 1rem;
+  }
+  .date p {
+    width: 130px;
+  }
+
+  .grid h6 {
+    height: 1rem;
+  }
+  .arrow {
+    top:40px;
+    left:calc(50% - 0.6rem);
+    width: 20px;
+    height: 20px; 
+  }
+  .arrowLeft {
+    top:7px;
+    left:-25px;
+    width: 17px;
+    height: 17px; 
+  }
+  .arrowRight {
+    top:7px;
+    left:139px;
+    width: 17px;
+    height: 17px; 
+  }
+}

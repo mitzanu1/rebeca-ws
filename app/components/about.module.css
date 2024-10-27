@@ -1,0 +1,127 @@
+.wrap {
+  background-color: rgb(237, 237, 237);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.main > p {
+  padding: 4rem 15%;
+  color: var(--text);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  color: var(--title);
+  font-size: var(--tsize);
+  padding: 4rem 5rem 2rem;
+  border-bottom: 2px solid gray;
+  justify-self: center;
+}
+
+.arrow {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(167, 167, 167);
+  left: calc(50% - 0.8rem);
+  top: 132px;
+  z-index: 99;
+  border-radius: 50%;
+  background-image: url("/arrow.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.dets {
+  display: grid;
+  grid-template-areas: 'left center right';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+  padding-top: 2rem;
+}
+
+.det {
+  padding-bottom: 1rem;
+}
+
+.det h4 {
+  color: var(--title);
+  font-size: var(--tsmall);
+  padding-bottom: 0.3rem;
+}
+
+.det p {
+  color: var(--text);
+  font-size: var(--txtsize);
+}
+
+.left {
+  text-align: right;
+  padding-top: 1rem;
+  grid-area: left;
+}
+
+.right {
+  text-align: left;
+  padding-top: 1rem;
+  grid-area: right;
+}
+
+.center {
+  width: 250px;
+  height: 250px;
+  background-image: url("../../public/rb.png");
+  transform: rotate(30deg);
+  border-radius: 50%;
+  border: 5px solid white;
+  background-position: left;
+  box-shadow: 1px 1px 10px 1px grey;
+  justify-self: center;
+  grid-area: center;
+}
+
+@media screen and (max-width:800px) {
+  .title{
+    padding: 2rem 1rem 1rem;
+    margin: 0 0 2rem;
+    font-size: var(--mob-tsize);
+  }
+  .arrow {
+    top:71px;
+    left:calc(50% - 0.6rem);
+    width: 20px;
+    height: 20px; 
+  }
+  .dets {
+    padding: 0;
+  }
+  .dets {
+    display: grid;
+    grid-template-areas: 
+      'left'
+      'center'
+      'right';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  .left,
+  .right,
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main > p {
+    text-align: center;
+    padding: 1rem;
+  }
+}
