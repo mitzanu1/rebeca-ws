@@ -12,6 +12,14 @@
   grid-gap: 0.5rem;
 }
 
+.main a:hover {
+  color: var(--primary);
+}
+
+.main a:focus {
+  color: var(--primary);
+}
+
 @media screen and (max-width: 800px) {
   .main {
     padding: 1rem 0;
