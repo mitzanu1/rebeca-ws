@@ -18,7 +18,7 @@ body {
   font-family: var(--font-josefin);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 2rem 15% 0;
+  padding: 3rem 15% 0;
   background-color: rgb(41, 40, 43);
 }
 
@@ -35,15 +35,13 @@ a {
 
 @media screen and (max-width: 1150px) {
   body {
-    padding: 2rem 10% 0;
+    padding: 3rem 10% 0;
   }
 }
 @media screen and (max-width: 1020px) {
   body {
-    padding: 2rem 5% 0;
+    padding: 3rem 5% 0;
   }
 }
 
-@media screen and (max-width: 800px) {
-  
-}
+

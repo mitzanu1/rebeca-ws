@@ -5,12 +5,12 @@ import { useTranslation } from "react-i18next";
 export default function Skills() {
   const { t } = useTranslation();
 
-  const skill1 = "70%";
-  const skill2 = "90%";
-  const skill3 = "83%";
-  const skill4 = "78%";
-  const skill5 = "55%";
-  const skill6 = "67%";
+  const skill1 = "100%";
+  const skill2 = "100%";
+  const skill3 = "100%";
+  const skill4 = "100%";
+  const skill5 = "70%";
+  const skill6 = "50%";
 
   return (
     <section className={styles.main} id="skills">
@@ -62,7 +62,7 @@ export default function Skills() {
         <div className={styles.gitem}>
           <div className={`${styles.wrap}`}>
             <div className={styles.skill} style={{ width: skill6 }}>
-              {t("skill6")}
+              Oracle
             </div>
           </div>
           <span>{skill6}</span>
