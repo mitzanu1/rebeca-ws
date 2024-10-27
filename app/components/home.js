@@ -16,6 +16,7 @@ export default function Home() {
           alt="Rebeca Andreescu"
           priority="high"
         />
+        <img className={styles.logo} src="/ra.png" alt="logo" />
       </div>
       <div className={styles.desc}>
         <h1>REBECA ADREESCU</h1>
