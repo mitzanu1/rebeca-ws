@@ -20,7 +20,7 @@
   height: 25px;
   background-color: rgb(167, 167, 167);
   left: 180px;
-  top: 140px;
+  top: 133px;
   z-index: 99;
   border-radius: 50%;
   background-image: url("/arrow.png");
@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   padding: 5% 5% 7%;
-  margin: 1rem;
+  margin: 3rem 0;
   background-color: white;
   grid-gap: 1.5rem;
   max-width: 600px;
