@@ -1,4 +1,3 @@
-import localFont from "next/font/local";
 import { Josefin_Sans } from "next/font/google";
 
 import "./globals.css";
@@ -23,7 +22,7 @@ export function generateStaticParams() {
 
 export default function RootLayout({ children, params: { locale } }) {
   return (
-    <html lang={locale}>
+    <html lang={locale || "en"}>
       <body className={`${josefin.variable}`}>{children}</body>
     </html>
   );

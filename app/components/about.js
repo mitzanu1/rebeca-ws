@@ -19,21 +19,6 @@ export default function About() {
               <p>Rebeca Andreescu</p>
             </div>
             <div className={styles.det}>
-              <h4>{t("birthday-t")}</h4>
-              <p>11 April 1999</p>
-            </div>
-            <div className={styles.det}>
-              <h4>{t("birthplace-t")}</h4>
-              <p>Targoviste, Romania</p>
-            </div>
-            <div className={styles.det}>
-              <h4>{t("hobbies-t")}</h4>
-              <p>{t("hobbies")}</p>
-            </div>
-          </div>
-          <div className={styles.center}></div>
-          <div className={styles.right}>
-            <div className={styles.det}>
               <h4>{t("address-t")}</h4>
               <p>Cluj-Napoca, Romania</p>
             </div>
@@ -41,6 +26,9 @@ export default function About() {
               <h4>{t("phone-t")}</h4>
               <p>+4 0728 461 445</p>
             </div>
+          </div>
+          {/* <div className={styles.center}></div> */}
+          <div className={styles.right}>
             <div className={styles.det}>
               <h4>{t("email-t")}</h4>
               <p>rebeca.andreescu@yahoo.com</p>
@@ -48,6 +36,10 @@ export default function About() {
             <div className={styles.det}>
               <h4>{t("web-t")}</h4>
               <p>www.rebecaandreescu.ro</p>
+            </div>
+            <div className={styles.det}>
+              <h4>{t("hobbies-t")}</h4>
+              <p>{t("hobbies")}</p>
             </div>
           </div>
         </div>

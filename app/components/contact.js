@@ -31,45 +31,51 @@ export default function Contact() {
         {t("contact-t")}
         <div className={styles.arrow}></div>
       </h2>
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className={styles.main}
-        onClick={(e) => {
-          e.stopPropagation();
-        }}
-      >
-        <p>{t("form-head")}</p>
-        <div className={styles.detailsBox}>
+      <article className={styles.wrap}>
+        <div className={styles.services}>
+          <h3>{t("services-ct")}:</h3>
+          <p>{t("services-desc")}</p>
+        </div>
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className={styles.main}
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+        >
+          <p>{t("form-head")}</p>
+          <div className={styles.detailsBox}>
+            <input
+              type="text"
+              name="user_name"
+              placeholder={t("form-name")}
+              required
+            />
+            <input
+              type="email"
+              name="user_email"
+              placeholder={t("form-email")}
+              required
+            />
+          </div>
           <input
             type="text"
-            name="user_name"
-            placeholder={t("form-name")}
+            name="user_subject"
+            placeholder={t("form-subject")}
             required
           />
-          <input
-            type="email"
-            name="user_email"
-            placeholder={t("form-email")}
+          <textarea
+            name="message"
+            placeholder={t("form-message")}
+            rows={7}
             required
           />
-        </div>
-        <input
-          type="text"
-          name="user_subject"
-          placeholder={t("form-subject")}
-          required
-        />
-        <textarea
-          name="message"
-          placeholder={t("form-message")}
-          rows={7}
-          required
-        />
-        <button className={styles.btn} type="submit" disabled={disabled}>
-          {t("send-message")}
-        </button>
-      </form>
+          <button className={styles.btn} type="submit" disabled={disabled}>
+            {t("send-message")}
+          </button>
+        </form>
+      </article>
     </section>
   );
 }

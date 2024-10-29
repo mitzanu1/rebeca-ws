@@ -9,13 +9,13 @@ export default function Nav() {
 
   return (
     <nav className={styles.main}>
-      <Link href="#home">{t("home-l")}</Link>
+      {/* <Link href="#home">{t("home-l")}</Link> */}
       <Link href="#about">{t("about-l")}</Link>
       <Link href="#skills">{t("myskills-l")}</Link>
-      <LanguageChanger />
       <Link href="#experience">{t("experience-l")}</Link>
       <Link href="#education">{t("education-l")}</Link>
       <Link href="#contact">{t("contact-l")}</Link>
+      <LanguageChanger />
     </nav>
   );
 }

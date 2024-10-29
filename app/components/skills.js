@@ -11,6 +11,8 @@ export default function Skills() {
   const skill4 = "100%";
   const skill5 = "70%";
   const skill6 = "50%";
+  const skill7 = "40%";
+  const skill8 = "100%";
 
   return (
     <section className={styles.main} id="skills">
@@ -66,6 +68,22 @@ export default function Skills() {
             </div>
           </div>
           <span>{skill6}</span>
+        </div>
+        <div className={styles.gitem}>
+          <div className={`${styles.wrap}`}>
+            <div className={styles.skill} style={{ width: skill7 }}>
+              Service Now
+            </div>
+          </div>
+          <span>{skill7}</span>
+        </div>
+        <div className={styles.gitem}>
+          <div className={`${styles.wrap}`}>
+            <div className={styles.skill} style={{ width: skill8 }}>
+              {t("skill8")}
+            </div>
+          </div>
+          <span>{skill8}</span>
         </div>
       </div>
     </section>

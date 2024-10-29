@@ -12,6 +12,7 @@
   padding: 4rem 5rem 2rem;
   border-bottom: 2px solid gray;
   justify-self: center;
+  text-align: center;
 }
 
 .arrow {
@@ -19,7 +20,7 @@
   width: 25px;
   height: 25px;
   background-color: rgb(167, 167, 167);
-  left: 180px;
+  left: calc(50% - 8px);
   top: 133px;
   z-index: 99;
   border-radius: 50%;
@@ -30,14 +31,39 @@
   transform: rotate(180deg);
 }
 
+.wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(237, 237, 237);
+  border-radius: 50px;
+  margin: 4rem 0;
+  padding: 2rem;
+}
+
+.services {
+  flex:1;
+  text-align: center;
+}
+
+.services h3 {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.services p {
+  color: var(--text);
+  padding: 5rem 2rem 0 0;
+  font-size: 1.5rem;
+}
+
 .main {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  padding: 5% 5% 7%;
-  margin: 3rem 0;
-  background-color: white;
   grid-gap: 1.5rem;
   max-width: 600px;
+
 }
 
 
@@ -155,9 +181,15 @@
     font-size: var(--mob-tsize);
   }
   .arrow {
-    top:71px;
+    top:103px;
     left:calc(50% - 0.6rem);
     width: 20px;
     height: 20px; 
+  }
+  .wrap {
+    flex-direction: column;
+  }
+  .services p {
+    padding: 2rem 0;
   }
 }
