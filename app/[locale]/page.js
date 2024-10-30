@@ -6,7 +6,8 @@ import App from "../components/App";
 
 const i18nNamespaces = ["home"];
 
-export default async function Home({ params: { locale } }) {
+export default async function Home({ params }) {
+  const { locale } = await params;
   const { resources } = await initTranslations(locale, i18nNamespaces);
 
   return (

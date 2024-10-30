@@ -73,7 +73,7 @@
   grid-area: right;
 }
 
-.center {
+/* .center {
   width: 250px;
   height: 250px;
   background-image: url("../../public/rb.png");
@@ -84,7 +84,7 @@
   box-shadow: 1px 1px 10px 1px grey;
   justify-self: center;
   grid-area: center;
-}
+} */
 
 @media screen and (max-width:800px) {
   .title{
