@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import styles from "./contact.module.css";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [disabled, setDisabled] = React.useState(false);
@@ -13,11 +14,13 @@ export default function Contact() {
     e.preventDefault();
     setDisabled(true);
     await emailjs
-      .sendForm("service_dcu2aqg", "template_9xjif21", form.current, {
-        publicKey: "l9SHxUEvWfYQLlppI111",
+      .sendForm("service_yu4r0jq", "template_6dfh0sy", form.current, {
+        publicKey: "l9SHxUEvWfYQLlppI",
       })
       .then(
-        () => {},
+        () => {
+          console.log("succes");
+        },
         (error) => {
           console.log("FAILED...", error.text);
         }
